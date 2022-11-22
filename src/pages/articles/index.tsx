@@ -1,9 +1,11 @@
-import { Article } from '@prisma/client';
 import { GetStaticProps } from 'next';
+import prisma from '../../lib/prisma';
 import Router from 'next/router';
-import prisma from '../../libs/prisma';
-
-const Articles = (props: { articles: Article[] }) => {
+import { ArticleProps } from '../../@types/Article';
+type Props = {
+    articles: ArticleProps[];
+};
+const Articles = (props: Props) => {
     return (
         <div className='container mx-auto'>
             <div className='mt-10 w-full px-8'>
