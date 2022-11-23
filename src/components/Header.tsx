@@ -5,13 +5,13 @@ const Header = () => {
     const { data: session, status } = useSession();
     return (
         <>
-            <div className='bg-gray-900'>
+            <div className='bg-slate-400 m-5 rounded-md'>
                 <div className='container mx-auto flex max-w-4xl items-center px-2 py-7'>
                     <div className='mx-auto flex w-full flex-wrap items-center'>
                         <div className='flex w-full justify-center font-extrabold text-white lg:w-1/2 lg:justify-start'>
                             <Link href='/'>
-                                <div className='text-2xl text-gray-900 no-underline hover:text-gray-900 hover:no-underline'>
-                                    🚀 &nbsp; <span className=' text-gray-200'>BUKUMA</span>
+                                <div className='text-3xl text-gray-900 hover:text-gray-900 hover:no-underline'>
+                                    📔 &nbsp; <span className=' text-gray-200'>BOOFee</span>
                                 </div>
                             </Link>
                         </div>
